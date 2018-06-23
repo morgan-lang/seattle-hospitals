@@ -1,10 +1,10 @@
 import React from 'react';
 import axios from 'axios';
-//import {BarChart} from 'react-easy-chart';
+import './App.css';
 
 export default class HospitalList extends React.Component {
   state = {
-  hospital500064: [],
+	hospital500064: [],
 	hospital500027: [],
 	hospital500001: [],
 	hospital500005: [],
@@ -76,7 +76,7 @@ export default class HospitalList extends React.Component {
 	<h3>Harborview Medical Center</h3>
         { this.state.hospital500064.map(harborviewList =>
 		<ul>		
-		<li>Category: {harborviewList.measure_name}</li>
+		<li class="category">Category: {harborviewList.measure_name}</li>
 		<li>Score: {harborviewList.score}</li>
 		<li>Compared to national average: {harborviewList.compared_to_national}</li>
 		<li>Denominator: {harborviewList.denominator}</li>
@@ -84,13 +84,14 @@ export default class HospitalList extends React.Component {
 		<li>Percentage lower: {harborviewList.lower_estimate}</li>
 		</ul>		
 		)}
+		
 		</div>
 		
 	<div id="swedish">
 	<h3>Swedish Medical Center</h3>
         { this.state.hospital500027.map(swedishList =>
 		<ul>		
-		<li>Category: {swedishList.measure_name}</li>
+		<li class="category">Category: {swedishList.measure_name}</li>
 		<li>Score: {swedishList.score}</li>
 		<li>Compared to national average: {swedishList.compared_to_national}</li>
 		<li>Denominator: {swedishList.denominator}</li>
@@ -105,7 +106,7 @@ export default class HospitalList extends React.Component {
 	<h3>Northwest Hospital</h3>
         { this.state.hospital500001.map(NorthwestList =>
 		<ul>		
-		<li>Category: {NorthwestList.measure_name}</li>
+		<li class="category">Category: {NorthwestList.measure_name}</li>
 		<li>Score: {NorthwestList.score}</li>
 		<li>Compared to national average: {NorthwestList.compared_to_national}</li>
 		<li>Denominator: {NorthwestList.denominator}</li>
@@ -119,7 +120,7 @@ export default class HospitalList extends React.Component {
 	<h3>Virginia Mason</h3>
         { this.state.hospital500005.map(VirginiaList =>
 		<ul>		
-		<li>Category: {VirginiaList.measure_name}</li>
+		<li class="category">Category: {VirginiaList.measure_name}</li>
 		<li>Score: {VirginiaList.score}</li>
 		<li>Compared to national average: {VirginiaList.compared_to_national}</li>
 		<li>Denominator: {VirginiaList.denominator}</li>
@@ -133,7 +134,7 @@ export default class HospitalList extends React.Component {
 	<h3>UW Medical Center</h3>
         { this.state.hospital500008.map(UWMCList =>
 		<ul>		
-		<li>Category: {UWMCList.measure_name}</li>
+		<li class="category">Category: {UWMCList.measure_name}</li>
 		<li>Score: {UWMCList.score}</li>
 		<li>Compared to national average: {UWMCList.compared_to_national}</li>
 		<li>Denominator: {UWMCList.denominator}</li>
@@ -147,7 +148,7 @@ export default class HospitalList extends React.Component {
 	<h3>Group Health</h3>
         { this.state.hospital500052.map(GroupHealthList =>
 		<ul>		
-		<li>Category: {GroupHealthList.measure_name}</li>
+		<li class="category">Category: {GroupHealthList.measure_name}</li>
 		<li>Score: {GroupHealthList.score}</li>
 		<li>Compared to national average: {GroupHealthList.compared_to_national}</li>
 		<li>Denominator: {GroupHealthList.denominator}</li>
@@ -161,7 +162,7 @@ export default class HospitalList extends React.Component {
 	<h3>Valley Medical Center</h3>
         { this.state.hospital500088.map(ValleyList =>
 		<ul>		
-		<li>Category: {ValleyList.measure_name}</li>
+		<li class="category">Category: {ValleyList.measure_name}</li>
 		<li>Score: {ValleyList.score}</li>
 		<li>Compared to national average: {ValleyList.compared_to_national}</li>
 		<li>Denominator: {ValleyList.denominator}</li>

@@ -26,3 +26,43 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+li.category {
+	list-style-type: none;
+	font-size: 1.5rem;
+}
+
+#container {
+	background-color: #ffffff;
+}
+
+#harborview{
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: #eae5e5;
+}
+#swedish{
+		border: 1px solid black;
+	border-radius: 10px;
+	background-color: #eae5e5;
+}
+#northwest{
+		border: 1px solid black;
+	border-radius: 10px;
+	background-color: #eae5e5;
+}
+#virginiamason{
+		border: 1px solid black;
+	border-radius: 10px;
+	background-color: #eae5e5;
+}
+#uwmc{
+		border: 1px solid black;
+	border-radius: 10px;
+	background-color: #eae5e5;
+}
+#valley{
+		border: 1px solid black;
+	border-radius: 10px;
+	background-color: #eae5e5;
+}
